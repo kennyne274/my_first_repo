@@ -1,4 +1,4 @@
-# Ray's basic Python progect 
+# Ray's basic Python project 
  
 Hi there! I am a beginner exploring the world of software development. 
 I am not a computer science major, but I am fascinated by how data, logic, and code can solve real problems. 
