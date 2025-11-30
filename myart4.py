@@ -29,6 +29,8 @@ for i in range(1,num_dots + 1):
         t.forward(50)
         t.setheading(180)
         t.forward(500)
+
+        
         t.setheading(0)
 
 
