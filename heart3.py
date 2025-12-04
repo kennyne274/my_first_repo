@@ -16,8 +16,6 @@ def draw_heart():
 
 # writing a message
 def write_love():
-    t.penup()
-    t.goto(0,30)
     t.color("white")
     t.write("I love you", align="center", font=('Comic Sans MS', 30, 'italic'))
        
@@ -30,6 +28,8 @@ def main():
     t.goto(0, -90)
     t.pendown()
     draw_heart()
+    t.penup()
+    t.goto(0,30)
     write_love()
     t.hideturtle()
     t.done()
