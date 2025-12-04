@@ -1,7 +1,7 @@
 import turtle as t
 import random
 
-size = 120
+size = 110
 
 # Basic settings
 t.bgcolor("black")
