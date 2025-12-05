@@ -5,7 +5,7 @@ size = 110
 
 # Basic settings
 t.bgcolor("black")
-t.color("green")
+t.color("peru")
 t.speed(0)
 t.left(90)
 t.penup()
@@ -19,11 +19,8 @@ def tree(i):
         return
     else:
         # Draw trunk/branch
-        t.pensize(int(i/20))
+        t.pensize((i/12))
         t.forward(i)
-        t.color("white")
-        t.circle(2)       # small leaf at the end
-        t.color("green")
       
         angle = random.uniform(20, 35)
         length = random.uniform(0.7, 0.85)
