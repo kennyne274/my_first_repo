@@ -56,7 +56,7 @@ def draw_snowflake(size, depth):
 t.penup()
 t.goto(0, size/2 + 50)
 t.pendown()
-t.write(f"the snowflake of {name}❄", align="center", font=("Arial", 30, "bold"))
+t.write(f"❄I love you, {name}❄", align="center", font=("Arial", 30, "bold"))
 
 t.penup()
 t.goto(-size/2, 50)
