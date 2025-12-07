@@ -78,7 +78,7 @@ while True:
     elif t2.xcor() >= 250:
         t2.penup()
         t2.goto(0, 0)
-        t2.write("Biue turtle wins!", align="center", font=("Arial", 30, "bold"))
+        t2.write("Blue turtle wins!", align="center", font=("Arial", 30, "bold"))
         break
     elif t3.xcor() >= 250:
         t3.penup()
