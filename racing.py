@@ -71,22 +71,34 @@ while True:
 
     # Check if any turtle reached the finish line
     if t1.xcor() >= 250:
-        print("Red turtle wins!")
+        t1.penup()
+        t1.goto(0, 0)
+        t1.write("Red turtle wins!", align="center", font=("Arial", 30, "bold"))
         break
     elif t2.xcor() >= 250:
-        print("Blue turtle wins!")
+        t2.penup()
+        t2.goto(0, 0)
+        t2.write("Biue turtle wins!", align="center", font=("Arial", 30, "bold"))
         break
     elif t3.xcor() >= 250:
-        print("Orange turtle wins!")
+        t3.penup()
+        t3.goto(0, 0)
+        t3.write("Orange turtle wins!", align="center", font=("Arial", 30, "bold"))
         break
     elif t4.xcor() >= 250:
-        print("Purple turtle wins!")
+        t4.penup()
+        t4.goto(0, 0)
+        t4.write("Purple turtle wins!", align="center", font=("Arial", 30, "bold"))
         break
     elif t5.xcor() >= 250:
-        print("Pink turtle wins!")
+        t5.penup()
+        t5.goto(0, 0)
+        t5.write("Pink turtle wins!", align="center", font=("Arial", 30, "bold"))
         break
     elif t6.xcor() >= 250:
-        print("Green turtle wins!")
+        t6.penup()
+        t6.goto(0, 0)
+        t6.write("Green turtle wins!", align="center", font=("Arial", 30, "bold"))
         break
 
 screen.mainloop()
