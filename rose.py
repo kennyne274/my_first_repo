@@ -1,3 +1,5 @@
+#Creating a pink rose
+
 import turtle as t
 
 t.bgcolor("black")
