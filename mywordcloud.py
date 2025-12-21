@@ -1,3 +1,6 @@
+# pip install wordcloud matplotlib numpy Pillow nltk kiwipiepy
+# import nltk
+# nltk.download('stopwords')
 
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
