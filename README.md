@@ -1,12 +1,8 @@
-# Ray's basic Python project 
+# Ray's first Python
  
 Hello! I’m a beginner coder who primarily uses Python.
-I enjoy learning by creating various practice scripts and small projects as a hobby.
-
-This repository contains the code I’ve written while practicing.
-Each script includes brief comments explaining what it does. I’m still at a beginner level, so any feedback or suggestions on my code would be greatly appreciated.
-If you encounter any issues while running the code, please feel free to let me know.
-
+This repo will have some Turtle codes I made and a few simple scripts. 
+They're pretty basic and lacking in many ways, but please be gentle with them~ 😊
 
 ![Lion Image](lion.png)
 
