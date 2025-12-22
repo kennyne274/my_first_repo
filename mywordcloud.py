@@ -1,6 +1,6 @@
-# pip install wordcloud matplotlib numpy Pillow nltk kiwipiepy
+# pip install wordcloud matplotlib numpy Pillow nltk kiwipiepy 설치할 라이브러리 목록
 # import nltk
-# nltk.download('stopwords')
+# nltk.download('stopwords') 파일 실행 후 다운로드
 
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
@@ -44,7 +44,7 @@ text = " ".join(all_words)
 
 
 
-# 3. 워드클라우드 생성 
+# 3. 워드클라우드 객체 생성 
 wc = WordCloud(
     font_path="C:/Windows/Fonts/HMFMPYUN.ttf",        # 맑은 고딕 (윈도우 기본 폰트)
     background_color="white",      # 배경색
