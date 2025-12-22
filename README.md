@@ -8,5 +8,4 @@ Each script includes brief comments explaining what it does. I’m still at a be
 If you encounter any issues while running the code, please feel free to let me know.
 
 
-![my turtle art][my_first_repo
-/lion.png]
+![my turtle art][IMG_lion.png]
