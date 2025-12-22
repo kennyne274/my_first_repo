@@ -7,4 +7,5 @@ This repository contains the code I’ve written while practicing.
 Each script includes brief comments explaining what it does. I’m still at a beginner level, so any feedback or suggestions on my code would be greatly appreciated.
 If you encounter any issues while running the code, please feel free to let me know.
 
-[my turtle art][093908.png]
+
+![my turtle art][093908.png]
