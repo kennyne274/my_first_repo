@@ -1,11 +1,9 @@
-# ⚠️ Disclaimer
-#This tool is intended for educational and learning purposes only.
-
-#Do NOT use this scanner on networks or systems that you do not own
-#or have explicit permission to test.
-
-#Unauthorized port scanning may be illegal or violate acceptable use policies.
-#The author is not responsible for any misuse of this code.
+"""
+This is a simple port scanner that can scan from port 1 to 1024. 
+It can calculate the scan time and also shows the scan progress. 
+The downside is that it's very slow because it scans too many ports. 
+If you're impatient, modify the code to scan only the port numbers you want by putting them in a list.
+"""
 
 import socket
 import time
