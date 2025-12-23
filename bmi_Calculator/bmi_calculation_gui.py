@@ -86,7 +86,7 @@ entry_weight = tk.Entry(root)
 entry_weight.pack()
 
 # Button
-tk.Button(root, text="Calculate BMI", font=FONT_LABEL, command=on_calculate).pack(pady=10)
+tk.Button(root, text="Calculate BMI", font=FONT_LABEL, bg="lightblue", command=on_calculate).pack(pady=10)
 
 # Result display
 label_result = tk.Label(root, text="", font=FONT_LABEL, bg="ivory", fg="navy")
