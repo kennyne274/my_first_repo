@@ -5,7 +5,7 @@
 # If you see anything that can be improved, feel free to point it out.
 
 
-# BMI calculation
+# Declare a function for BMI calculation
 import tkinter as tk
 from tkinter import messagebox
 import datetime
@@ -14,7 +14,7 @@ LOG_FILE = "bmi.txt"
 FONT_LABEL = ("Courier", 12, "bold")
 
 
-# BMI calculation function
+# Declare the main function
 def calculate_bmi(height, weight):
     bmi = weight / (height ** 2)
 
@@ -58,9 +58,8 @@ def on_calculate():
         )
 
 
-# -----------------------------
 # Create GUI
-# -----------------------------
+
 root = tk.Tk()
 root.title("BMI Calculator")
 root.geometry("500x380")
