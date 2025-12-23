@@ -1,5 +1,11 @@
-# BMI calculation
+# This is a BMI calculator made using the Tkinter module.
+# I made it just for fun.
+# Check your health status with it.
+# This code was written by a beginner, so it may not be very polished.
+# If you see anything that can be improved, feel free to point it out.
 
+
+# BMI calculation
 import tkinter as tk
 from tkinter import messagebox
 import datetime
