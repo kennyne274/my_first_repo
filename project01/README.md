@@ -1,3 +1,5 @@
+![][스크린샷 2025-12-24 005806.png]
+
 # BMI Calculator
 
 LOG_FILE = "bmi.txt"
