@@ -1,4 +1,3 @@
-
 # This is a BMI calculator made using the Tkinter module.
 # I made it just for fun.
 # Check your health status with it.
@@ -52,7 +51,7 @@ def on_calculate():
 
     except ValueError:
         messagebox.showerror(
-            
+            "Input Error",
             "Please enter it correctly."
         )
 
@@ -93,3 +92,4 @@ label_result = tk.Label(root, text="", font=FONT_LABEL, bg="ivory", fg="navy")
 label_result.pack()
 
 root.mainloop()
+
