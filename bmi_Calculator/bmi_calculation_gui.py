@@ -1,11 +1,10 @@
+
 # This is a BMI calculator made using the Tkinter module.
 # I made it just for fun.
 # Check your health status with it.
 # This code was written by a beginner, so it may not be very polished.
 # If you see anything that can be improved, feel free to point it out.
 
-
-# Declare a function for BMI calculation
 import tkinter as tk
 from tkinter import messagebox
 import datetime
@@ -14,7 +13,7 @@ LOG_FILE = "bmi.txt"
 FONT_LABEL = ("Courier", 12, "bold")
 
 
-# Declare the main function
+# BMI calculation function
 def calculate_bmi(height, weight):
     bmi = weight / (height ** 2)
 
@@ -39,7 +38,7 @@ def on_calculate():
         weight = float(entry_weight.get())
 
         if not name:
-            raise ValueError("Name is empty")
+            raise ValueError
 
         bmi, status = calculate_bmi(height, weight)
 
@@ -53,13 +52,14 @@ def on_calculate():
 
     except ValueError:
         messagebox.showerror(
-            "Input Error",
-            "Please enter valid numeric values for height and weight."
+            
+            "Please enter it correctly."
         )
 
 
+# -----------------------------
 # Create GUI
-
+# -----------------------------
 root = tk.Tk()
 root.title("BMI Calculator")
 root.geometry("500x380")
@@ -86,11 +86,10 @@ entry_weight = tk.Entry(root)
 entry_weight.pack()
 
 # Button
-tk.Button(root, text="Calculate BMI", font=FONT_LABEL, bg="lightblue", command=on_calculate).pack(pady=10)
+tk.Button(root, text="Calculate BMI", font=FONT_LABEL, bg="lightblue",command=on_calculate).pack(pady=10)
 
 # Result display
 label_result = tk.Label(root, text="", font=FONT_LABEL, bg="ivory", fg="navy")
 label_result.pack()
 
 root.mainloop()
-
