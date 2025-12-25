@@ -5,7 +5,7 @@ from tkinter import messagebox
 
 def check_status():
     if chk.get() ==0:
-        messagebox.showinfo("", ""Checkbutton deselected")
+        messagebox.showinfo("", "Checkbutton deselected")
     else:
         messagebox.showwarning("","Checkbutton selected")
 
