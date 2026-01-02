@@ -11,7 +11,7 @@ while True:
     t.forward(i)
     t.lt(118)
     i += 1
-    if i ==900:
+    if i == 1000:
         break
 
 
