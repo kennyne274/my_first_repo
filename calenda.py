@@ -44,6 +44,6 @@ btn_frame.pack(pady=10)
 
 btn = tk.Button(btn_frame, text="This month", width = 12, height= 2, bg="aliceblue", font=FONT, command=date)
 btn.grid(row=0, column=0)
-btn2 = tk.Button(btn_frame, text="This month", width = 12, height= 2, bg="aliceblue", font=FONT, command=year)
+btn2 = tk.Button(btn_frame, text="This year", width = 12, height= 2, bg="aliceblue", font=FONT, command=year)
 btn2.grid(row=0, column=1)
 root.mainloop()
