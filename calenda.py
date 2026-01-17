@@ -36,14 +36,24 @@ def year():
 label = tk.Label(text = "My Calendar", fg=FG, bg = BG, font=("Consolas", 12, "bold"))
 label.pack(pady=(20,5))
 
-text = tk.Text(width= 74, height= 22, fg=FG, bg=BG, font=("Consolas", 11, "bold"))
+text_frame = tk.Frame(root, bg=BG)
+text_frame.pack()
+
+scrollbar = tk.Scrollbar(text_frame)
+scrollbar.pack(side="right", fill="y")
+
+
+text = tk.Text(text_frame, width= 74, height= 20, font=("Consolas", 11, "bold"),yscrollcommand=scrollbar.set)
 text.pack(pady=(20))
+
+scrollbar.config(command=text.yview)
+
 
 btn_frame = tk.Frame(root, bg=BG)
 btn_frame.pack(pady=10)
 
-btn = tk.Button(btn_frame, text="This month", width = 12, height= 2, bg="aliceblue", font=FONT, command=date)
+btn = tk.Button(btn_frame, text="This month", width = 12, bg="lightgray", height= 2, font=FONT, command=date)
 btn.grid(row=0, column=0)
-btn2 = tk.Button(btn_frame, text="This year", width = 12, height= 2, bg="aliceblue", font=FONT, command=year)
+btn2 = tk.Button(btn_frame, text="This year", width = 12, bg="lightgray", height= 2, font=FONT, command=year)
 btn2.grid(row=0, column=1)
 root.mainloop()
