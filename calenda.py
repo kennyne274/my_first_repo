@@ -43,7 +43,7 @@ scrollbar = tk.Scrollbar(text_frame)
 scrollbar.pack(side="right", fill="y")
 
 
-text = tk.Text(text_frame, width= 74, height= 20, font=("Consolas", 11, "bold"),yscrollcommand=scrollbar.set)
+text = tk.Text(text_frame, width= 74, height= 20, bg = BG, fg= FG, font=("Consolas", 11, "bold"),yscrollcommand=scrollbar.set)
 text.pack(pady=(20))
 
 scrollbar.config(command=text.yview)
