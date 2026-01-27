@@ -23,6 +23,7 @@ root = tk.Tk()
 root.title("Digital Clock with Date & Day")
 root.config(bg="#272727")
 root.geometry("390x180")
+root.resizable(0,0)
 
 time_frame = tk.Frame(root,bg="#141313", bd=2,relief="ridge")
 time_frame.pack(fill="both",expand=True, padx=20,pady=20)
