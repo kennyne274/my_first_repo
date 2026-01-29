@@ -2,6 +2,8 @@
 Beautiful Digital Clock
 You need to download the 'DS-Digital' font for the best look, 
 but if it's not available, it will automatically fall back to Courier font.
+For the best visual effect, download and install the **DS-Digital** font:  
+[Download DS-Digital font here](https://www.dafont.com/ds-digital.font)
 Enjoy your time! :)
 """
 
