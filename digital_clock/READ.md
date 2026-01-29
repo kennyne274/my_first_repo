@@ -18,3 +18,4 @@ For the best visual effect, download and install the **DS-Digital** font:
 
 If the font is not available, the clock will automatically use Courier.
 
+![Digital Clock Screenshot](digital_clock02.png)
