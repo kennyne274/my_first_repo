@@ -18,6 +18,7 @@ home()
 setheading(90)
 forward(200)
 home()
+
 setheading(270)
 forward(200)
 
