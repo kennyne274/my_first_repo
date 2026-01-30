@@ -6,7 +6,7 @@ title("Tree")
 bgcolor("#0A022B")   
 color("#74A4FC")
 pensize(3)
-speed(0)
+speed(7)
 
 # drawing a tree
 
