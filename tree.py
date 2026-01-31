@@ -16,6 +16,7 @@ t.hideturtle()
 # Tree drawing function
 def tree(i):
     if i < 10:
+        t.dot(10)
         return
     else:
         # Draw trunk/branch
