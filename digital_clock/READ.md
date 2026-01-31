@@ -1,4 +1,4 @@
-# Beautiful Digital Clock 
+# Nice Digital Clock 
 
 A simple yet stylish digital clock made with **Tkinter** in Python.
 
