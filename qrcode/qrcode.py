@@ -26,7 +26,7 @@ else:
     qr.make(fit=True)                      # Automatically adjust version to fit the data
 
     # Create image (custom color + white background)
-    img = qr.make_image(fill_color="#024D5A", back_color="white")
+    img = qr.make_image(fill_color="#9D00FF", back_color="white")
 
     # Save the image to file
     img.save(file_path)
