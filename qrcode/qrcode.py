@@ -29,7 +29,10 @@ else:
     img = qr.make_image(fill_color="#9D00FF", back_color="white")
 
     # Save the image to file
-    img.save(file_path)
+    try:
+        img.save(file_path)
+    except Exception as e:
+        print(f"Failed to save :{e}")
 
     print("QR code saved successfully!")
     print("Location:", os.getcwd())
