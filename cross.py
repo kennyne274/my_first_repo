@@ -1,4 +1,3 @@
-
 # Draw a cross symbol
 
 from turtle import *
@@ -8,7 +7,7 @@ def cross(size):
 
     bgcolor("#000000")
     pencolor("crimson")
-    pensize(30)
+    pensize(15)
 
     forward(size)
     home()
@@ -26,7 +25,12 @@ def cross(size):
     setheading(0)
     circle(size)
 
-cross(180)
+cross(100)
 hideturtle()
+
+penup()
+goto(0,- 100)
+color("#F9E106")
+write("Jesus Christ loves you!", align="center", font=("Arial", 20, "italic"))
 
 done()
