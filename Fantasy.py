@@ -10,7 +10,7 @@ turtle.tracer(2)
 
 h = 0
 
-for i in range(1200):
+for i in range(1000):
     c = colorsys.hsv_to_rgb(h,1,0.9)
     h+= 0.003
     t.color(c)
