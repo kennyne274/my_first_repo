@@ -6,7 +6,6 @@ t = turtle.Turtle()
 turtle.bgcolor("black")
 t.speed(0)
 t.shape("turtle")
-t.hideturtle()
 
 h = 0
 
