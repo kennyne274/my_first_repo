@@ -1,4 +1,4 @@
-# Drawing maple_leaf
+# Drawing a maple_leaf
 
 from turtle import *
 import colorsys
