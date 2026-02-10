@@ -16,8 +16,8 @@ def time():
     label.after(1000, time)
 
 # Center the label in the window
-label = Label(root, bg="black", fg="cyan", font=("Times New Roman", 60), padx=20, pady=20)
-label.pack(expand=True)
+label = Label(root, bg="black", fg="cyan", font=("Times New Roman", 60))
+label.pack(padx=20, pady=20, expand=True)
 
 # Start the clock
 time()
