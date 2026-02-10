@@ -6,6 +6,7 @@ from datetime import datetime
 # Create the main window
 root = Tk()
 root.title("MY Clock")
+root.configure(bg="black")
 
 # Create and configure the time display label
 def time():
