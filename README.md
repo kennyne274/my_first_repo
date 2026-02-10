@@ -11,5 +11,5 @@ They're pretty basic and lacking in many ways, but please be gentle with them~ ð
 ![Lion Image](lion.png)
 
 ### flower.py
-![Flower pattern output](images/flower.png)
+![Flower pattern output](flower.png)
 
