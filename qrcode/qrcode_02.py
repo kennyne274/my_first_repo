@@ -13,10 +13,14 @@ QRimg = QRcode.make_image(fill_color = QRcolor, back_color = 'white').convert('R
 # Path to your logo image
 logoUrl = "apple.png" 
 # Open the logo image using PIL
-logo = Image.open(logoUrl)
+try:
+    logo = Image.open(logoUrl)
+except FileNotFoundError:
+    print("Logo file not found..")
+    exit()
 
 # Resize the logo to a reasonable size
-base_width = 80
+base_width = QRimg.size[0] // 4
 width_percent = base_width / logo.size[0]
 new_height = int(logo.size[1] * width_percent)
 
