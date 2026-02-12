@@ -11,7 +11,7 @@ QRcolor = "#E504E5"
 QRimg = QRcode.make_image(fill_color = QRcolor, back_color = 'white').convert('RGB')
 
 # Path to your logo image
-logoUrl = r"C:\Users\user\Pictures\apple.png" 
+logoUrl = "apple.png" 
 # Open the logo image using PIL
 logo = Image.open(logoUrl)
 
