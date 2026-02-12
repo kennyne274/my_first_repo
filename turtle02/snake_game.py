@@ -35,7 +35,7 @@ def score_update():
     global score
     score += 1
     score_count.clear()
-    score_count.write(f"점수 : {score}", font = ("Arial", 15, "bold"))
+    score_count.write(f"Score : {score}", font = ("Arial", 15, "bold"))
 
 # Create snake body segment
 def create_snake(pos):
