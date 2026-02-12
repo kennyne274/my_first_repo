@@ -34,4 +34,4 @@ center_y = (QRimg.size[1] - logo.size[1]) // 2
 QRimg.paste(logo, (center_x, center_y))
 
 QRimg.save('test3.png')
-QRimg
+QRimg.show(
