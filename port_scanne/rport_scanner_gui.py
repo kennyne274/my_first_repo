@@ -1,6 +1,11 @@
 
 # I think this is a fun toy tool!
 
+# Simple port scanner created for learning purposes.
+# Use it ONLY on your own computer or servers you have explicit permission to scan.
+# Unauthorized port scanning is illegal.
+
+
 import socket
 import threading
 import tkinter as tk
