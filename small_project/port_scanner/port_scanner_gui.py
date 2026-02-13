@@ -1,4 +1,5 @@
-#  Port Scanner GUI
+
+# I think this is a fun toy tool!
 
 import socket
 import threading
@@ -23,17 +24,17 @@ class PortScannerGUI:
         tk.Label(input_frame, text="Target IP:", fg="#71FA1C", bg="black").grid(row=0, column=0)
         self.ip_entry = tk.Entry(input_frame, width=15)
         self.ip_entry.insert(0, "45.33.32.156")
-        self.ip_entry.grid(row=0, column=1, padx=5)
+        self.ip_entry.grid(row=0, column=1, padx=8, pady=10)
 
         tk.Label(input_frame, text="Start Port:", fg="#71FA1C", bg="black").grid(row=0, column=2)
-        self.start_entry = tk.Entry(input_frame, width=6)
+        self.start_entry = tk.Entry(input_frame, width=10)
         self.start_entry.insert(0, "1")
-        self.start_entry.grid(row=0, column=3, padx=5)
+        self.start_entry.grid(row=0, column=3, padx=8, pady=10)
 
         tk.Label(input_frame, text="End Port:", fg="#71FA1C", bg="black").grid(row=0, column=4)
-        self.end_entry = tk.Entry(input_frame, width=6)
+        self.end_entry = tk.Entry(input_frame, width=10)
         self.end_entry.insert(0, "1024")
-        self.end_entry.grid(row=0, column=5, padx=5)
+        self.end_entry.grid(row=0, column=5, padx=8, pady=10)
 
         # output
         self.result_label = tk.Label(
