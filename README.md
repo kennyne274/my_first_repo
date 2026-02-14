@@ -13,7 +13,7 @@ I'd appreciate it if you could understand my poor English.
 
 Please add honest comments on the code, too. 
 
-GitHub is a mysterious world for me. 😲
+#GitHub is a mysterious world for me. 😲
 
 I'm getting used to it more and more. 
 
