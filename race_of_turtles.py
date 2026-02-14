@@ -46,6 +46,7 @@ while True:
         # Check if any turtle has crossed the finish line
         if t.xcor() >= finish_line:
             winner = t.pencolor()
+            break
     
     if winner:
         break
