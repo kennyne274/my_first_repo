@@ -40,7 +40,7 @@ def draw_sky_gradient(steps):
 
 # drawing a white clouds
 def draw_circle(x, y, radius, color):
-    """지정 위치(x, y)에 색상과 반지름을 가진 원을 그림"""
+   
     t.penup()
     t.goto(x, y - radius)  
     t.pendown()
