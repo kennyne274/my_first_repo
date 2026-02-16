@@ -74,5 +74,3 @@ draw_cloud(-180, -150, 0.9)
 screen.mainloop()
 
 
-
-screen.mainloop()
