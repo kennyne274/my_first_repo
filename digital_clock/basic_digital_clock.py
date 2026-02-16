@@ -1,24 +1,31 @@
 # Simple Digital Clock 
 
-from tkinter import*
-from datetime import datetime
+import tkinter as tk
+import time
 
-# Create the main window
-root = Tk()
-root.title("MY Clock")
-root.configure(bg="black")
+class DigitalClock:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Clock")
+        self.date_label = tk.Label(root, font=("New Roman Times", 20), fg = "yellow", bg="#000000")
+        self.date_label.pack(expand = True, fill='both')
+        self.label = tk.Label(root, font=("New Roman Times", 50), fg = "cyan", bg="#000000")
+        self.label.pack(fill='x')
+        self.update_clock()
 
-# Create and configure the time display label
-def time():
-    now = datetime.now()
-    str = now.strftime("%H:%M:%S %p")
-    label.config(text=str)
-    label.after(1000, time)
+    def update_clock(self):
+        current_date = time.strftime("%Y-%m-%d")
+        current_time = time.strftime("%H:%M:%S")
+        self.date_label.config(text=current_date)
+        self.label.config(text=current_time)
+        self.root.after(1000, self.update_clock)
 
-# Center the label in the window
-label = Label(root, bg="black", fg="cyan", font=("Times New Roman", 60))
-label.pack(padx=20, pady=20, expand=True)
+if __name__ == "__main__":
+    root = tk.Tk()
+    root.geometry("320x170")
+    root.resizable(False, False)
 
-# Start the clock
-time()
-mainloop()
+    clock = DigitalClock(root)
+    root.mainloop()
+        
+
