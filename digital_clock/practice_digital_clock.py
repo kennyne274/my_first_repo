@@ -7,10 +7,19 @@ class DigitalClock:
     def __init__(self, root):
         self.root = root
         self.root.title("Clock")
-        self.date_label = tk.Label(root, font=("New Roman Times", 20), fg = "yellow", bg="#000000")
-        self.date_label.pack(expand = True, fill='both')
-        self.label = tk.Label(root, font=("New Roman Times", 50), fg = "cyan", bg="#000000")
-        self.label.pack(fill='x')
+        self.root.configure(bg="red")
+        self.root.attributes("-topmost", True)
+        font_time = ("Times New Roman", 50)
+        font_date = ("Times New Roman", 20)
+        try:
+            font_time = ("DS-Digital", 50, "bold")
+            font_date = ("DS-Digital", 20, "bold")
+        except tk.TclError:
+            pass
+        self.date_label = tk.Label(root, font=font_date, fg = "yellow", bg="#000000")
+        self.date_label.pack(fill='x', pady=(0,2))
+        self.label = tk.Label(root, font=font_time, fg = "cyan", bg="#000000")
+        self.label.pack(expand=True, fill='both', pady=(0,2))
         self.update_clock()
 
     def update_clock(self):
@@ -28,4 +37,3 @@ if __name__ == "__main__":
     clock = DigitalClock(root)
     root.mainloop()
         
-
