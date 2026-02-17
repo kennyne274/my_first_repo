@@ -40,7 +40,7 @@ root.resizable(False, False)
 
 # Background image (fallback to ivory color if file is missing)
 try:
-    bg_image = tk.PhotoImage(file=r"C:\Users\user\Desktop\python\field.png")
+    bg_image = tk.PhotoImage(file="field.png")
     canvas = tk.Canvas(root, width=800, height=600, highlightthickness=0)
     canvas.pack()
     canvas.create_image(400, 300, image=bg_image)
