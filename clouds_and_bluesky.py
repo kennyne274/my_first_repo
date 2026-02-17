@@ -12,7 +12,7 @@ t.speed(0)
 t.hideturtle()
 
 
-# drawing the blue Sky
+# Blue sky
 def draw_sky_gradient(steps):
     r, g, b = 0, 128, 255
     step_height = 600 / steps
@@ -38,7 +38,7 @@ def draw_sky_gradient(steps):
         t.end_fill()
 
 
-# drawing a white clouds
+# white clouds
 def draw_circle(x, y, radius, color):
    
     t.penup()
