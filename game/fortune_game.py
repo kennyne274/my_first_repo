@@ -4,29 +4,30 @@ import random
 """
 A simple program that gives you a random fortune message when you click the button.
 I tried to make the messages fun and silly. Try it when you're bored!
-It's a basic little app, but I hope it helps with your Python studies.
-I'm still pretty new to Python myself :)
+It's a basic little app, but I hope it helps with your Python studies. :)
+
 """
 
 # List of fortune messages
 fortune_messages = [
     "Your future is so bright... you'll need sunglasses (and therapy).",
-    "Good luck: You'll find an extra $1 in your pocket. Treat yourself to half a gum.",
+    "Good luck: You'll find an extra $100 in your pocket.",
     "Today will be smooth... like your dating life. (Spoiler: not at all.)",
-    "The good news is coming. Probably next Tuesday. Or never.",
-    "The universe is rooting for you... from a safe distance.",
+    "The good news is coming. Probably next Tuesday.",
+    "The universe is rooting for you.",
     "Watch out today. Your boss is about to 'have a quick chat' with you.",
-    "99% chance you'll gain weight today. The other 1% is denial.",
-    "Your big break is coming... in your next life. This one's booked.",
+    "99% chance you'll gain weight today.",
+    "Your big break is coming...",
     "Even when life knocks you down, you'll land face-first. Classic you.",
     "A love confession is on its way... probably from your AI chatbot.",
-    "You were born to be loved... mostly by your cat and DoorDash.",
-    "Your friend will pay you back... right after they win the lottery.",
-    "Everything's going to be okay... said no one ever.",
+    "You were born to be loved!",
+    "Your friend will pay you back!",
+    "Everything's going to be okay!",
     "Your tax refund has arrived. Psych! It's a bill for $500 more.",
     "Luck starts the second you read this... said every scammy cookie ever. (Just kidding... or am I?)"
 ]
 
+def draw_fortune():
     """Draw a random fortune message"""
     label.config(text="Drawing your fortune...")
     label.update()
@@ -39,7 +40,7 @@ root.resizable(False, False)
 
 # Background image (fallback to ivory color if file is missing)
 try:
-    bg_image = tk.PhotoImage(file="field.png")
+    bg_image = tk.PhotoImage(file=r"C:\Users\user\Desktop\python\field.png")
     canvas = tk.Canvas(root, width=800, height=600, highlightthickness=0)
     canvas.pack()
     canvas.create_image(400, 300, image=bg_image)
@@ -48,7 +49,7 @@ except Exception as e:
     canvas = tk.Canvas(root, width=800, height=600, bg="ivory", highlightthickness=0)
     canvas.pack()
 
-
+# Title label
 label = tk.Label(
     root,
     text="Click the button to draw today's fortune!",
@@ -60,11 +61,11 @@ label = tk.Label(
 )
 label.place(x=400, y=180, anchor="center")
 
-
+# Fortune draw button
 button = tk.Button(
     root,
     text="Draw Fortune 🎲",
-    font=("Arial", 28, "bold"), 
+    font=("Arial", 28, "bold"),  # Keep Korean font or change to "Arial" etc.
     command=draw_fortune,
     bg="#a7ffeb",
     fg="#00695c",
