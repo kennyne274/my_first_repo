@@ -10,25 +10,23 @@ I'm still pretty new to Python myself :)
 
 # List of fortune messages
 fortune_messages = [
-    "Your future is bright! (Like, 3 lightbulbs bright)",
-    "Good luck: You'll find an extra 1,000 won in your wallet.",
-    "Everything will go smoothly today.",
-    "The good news you've been waiting for is coming soon.",
-    "The sky is cheering you on!",
-    "Be careful today. Your boss is looking for you.",
-    "There's a 99% chance you'll gain weight today.",
-    "Your life-changing moment... probably in your next life!",
-    "Even falling backwards, you'll still break your nose.",
-    "You'll soon get a love confession... from an AI.",
-    "You were born to be loved ❤️",
-    "Your friend will finally pay back the money they borrowed.",
-    "Everything will turn out well.",
-    "Your tax bomb notice has arrived.",
-    "The moment you read this, your luck begins! (Just kidding)"
+    "Your future is so bright... you'll need sunglasses (and therapy).",
+    "Good luck: You'll find an extra $1 in your pocket. Treat yourself to half a gum.",
+    "Today will be smooth... like your dating life. (Spoiler: not at all.)",
+    "The good news is coming. Probably next Tuesday. Or never.",
+    "The universe is rooting for you... from a safe distance.",
+    "Watch out today. Your boss is about to 'have a quick chat' with you.",
+    "99% chance you'll gain weight today. The other 1% is denial.",
+    "Your big break is coming... in your next life. This one's booked.",
+    "Even when life knocks you down, you'll land face-first. Classic you.",
+    "A love confession is on its way... probably from your AI chatbot.",
+    "You were born to be loved... mostly by your cat and DoorDash.",
+    "Your friend will pay you back... right after they win the lottery.",
+    "Everything's going to be okay... said no one ever.",
+    "Your tax refund has arrived. Psych! It's a bill for $500 more.",
+    "Luck starts the second you read this... said every scammy cookie ever. (Just kidding... or am I?)"
 ]
 
-
-def draw_fortune():
     """Draw a random fortune message"""
     label.config(text="Drawing your fortune...")
     label.update()
