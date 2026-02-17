@@ -3,7 +3,6 @@ import random
 
 size = 110
 
-# Basic settings
 t.bgcolor("black")
 t.color("peru")
 t.speed(0)
