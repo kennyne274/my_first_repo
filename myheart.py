@@ -1,7 +1,6 @@
 # Beautiful turtle art that draws colorful small hearts around a large central heart
 import turtle as t
 
-# Screen settings (background color, speed, pen size, hide cursor)
 t.bgcolor("ivory")
 t.speed(2)
 t.pensize(6)
