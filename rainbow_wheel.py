@@ -3,7 +3,6 @@ import colorsys
 
 t = turtle.Turtle()
 
-# Set up the screen
 turtle.bgcolor("black")
 t.speed(1)
 t.shape("arrow")
@@ -22,6 +21,5 @@ for angle in range(0, 360, 12):
     t.forward(200)
     t.backward(200)
 
-# Hide the turtle after drawing is complete
 t.hideturtle()
 turtle.done()
