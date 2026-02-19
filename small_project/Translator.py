@@ -47,7 +47,6 @@ def delete():
     output_text.delete("1.0", tk.END)
 
 
-# Create main window
 root = tk.Tk()
 root.title("Multi-Language Translator")
 root.geometry("620x630")
