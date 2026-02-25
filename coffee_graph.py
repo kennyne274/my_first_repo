@@ -38,12 +38,11 @@ t.goto(0, 220)
 t.pencolor("brown")
 t.write("Average Daily Coffee Sales by Shop", align="center", font=("Arial", 22, "bold"))
 
-# X
+
 t.goto(0, -180)
 t.pencolor("teal")
 t.write("Coffee Shop Branches", align="center", font=("Arial", 16, "bold"))
 
-# Y
 t.goto(-180, -120)
 t.pendown()
 t.pencolor("black")
