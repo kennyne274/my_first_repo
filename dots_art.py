@@ -1,18 +1,6 @@
 import turtle as t
 import random
 
-t.bgcolor("ivory")
-t.speed(0)
-
-t.penup()
-
-x = -300
-y = -270
-
-t.goto(x, y)
-t.pendown()
-t.colormode(255)
-
 def draw_dots(size):
     global y
     for i in range(10):    
@@ -28,10 +16,20 @@ def draw_dots(size):
         y += size*2
 
         t.goto(x, y)
-      
+
+
+t.bgcolor("ivory")
+t.speed(0)
+t.penup()
+
+x = -300
+y = -270
+
+t.goto(x, y)
+t.pendown()
+t.colormode(255)
 
 draw_dots(30)
-
 t.hideturtle()
 
-t.done()
+t.done())
