@@ -11,26 +11,29 @@ y = -270
 
 t.goto(x, y)
 t.pendown()
-
 t.colormode(255)
 
-for i in range(10):    
-    for j in range(11):
-        r = random.randint(50, 250)
-        g = random.randint(50, 250)
-        b = random.randint(50, 250)
-        t.color(r,g,b)
-        t.dot(30)
+def draw_dots(size):
+    global y
+    for i in range(10):    
+        for j in range(11):
+            r = random.randint(50, 250)
+            g = random.randint(50, 250)
+            b = random.randint(50, 250)
+            t.color(r,g,b)
+            t.dot(size)
+            t.penup()
+            t.fd(size*2)
+            t.pendown()
+        
+
+        y += size*2
+
         t.penup()
-        t.fd(60)
+        t.goto(x, y)
         t.pendown()
-       
 
-    y += 60
-
-    t.penup()
-    t.goto(x, y)
-    t.pendown()
+draw_dots(30)
 
 t.hideturtle()
 
