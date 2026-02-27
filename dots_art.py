@@ -23,15 +23,12 @@ def draw_dots(size):
             t.color(r,g,b)
             t.dot(size)
             t.penup()
-            t.fd(size*2)
-            t.pendown()
-        
+            t.fd(size*2)          
 
         y += size*2
 
-        t.penup()
         t.goto(x, y)
-        t.pendown()
+      
 
 draw_dots(30)
 
