@@ -37,7 +37,6 @@ y = -270
 
 t.goto(x, y)
 t.colormode(255)
-
 draw_dots()
 t.hideturtle()
 
