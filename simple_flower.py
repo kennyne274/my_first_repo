@@ -30,7 +30,7 @@ def flower():
         t.left(angle)
 
 def center_of_flower():
-    t.dot(100, "yellow")
+    t.dot(100, "gold")
     t.penup()
     t.goto(-5,-34)
     t.setheading(0)
