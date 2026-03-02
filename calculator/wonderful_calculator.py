@@ -2,6 +2,10 @@ import tkinter as tk
 
 # wonderful calculator"
 
+"""Using eval() is not recommended for security reasons in production code,
+    but this is a simple learning project calculator, so we use it for simplicity."""
+    
+
 # Insert number or operator into the entry field
 def num_click(value):
     entry.insert(tk.END, value)
@@ -12,10 +16,6 @@ def clear():
 
 ## Evaluate the expression and show result
 def calculate():
-    """
-    Using eval() is not recommended for security reasons in production code,
-    but this is a simple learning project calculator, so we use it for simplicity.
-    """
     try:
         result = eval(entry.get())
         entry.delete(0, tk.END)
