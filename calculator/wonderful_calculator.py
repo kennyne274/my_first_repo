@@ -1,10 +1,6 @@
 import tkinter as tk
 
-# Create a handler function that inserts the value when button is clicked
-def create_handler(value):
-    def handler():
-        num_click(value)
-    return handler
+# wonderful calculator"
 
 # Insert number or operator into the entry field
 def num_click(value):
@@ -34,7 +30,7 @@ root.title("calculator")
 root.configure(bg="#2D2D2D")
 
 entry = tk.Entry(root, justify="right", width=30, bg="ivory", font=('', 16, 'bold'))
-entry.grid(row=0, column=0, columnspan=5, ipady=10, pady=5)
+entry.grid(row=0, column=0, columnspan=4, ipady=10, pady=5)
 
 
 
@@ -60,7 +56,7 @@ for button in buttons:
         btn.grid(row=row, column=col,  padx=3, pady=3)
     else:
         btn = tk.Button(root, text= button, font=('', 15, 'bold'),
-                        bg="#464545", width=7, height=3, command=create_handler(button))
+                        bg="#464545", width=7, height=3, command=lambda v=button: num_click(v))
         btn.grid(row=row, column=col,  padx=3, pady=3)
     
     col += 1
