@@ -45,7 +45,7 @@ buttons = [
     'C','0','+','='
 ]
 
-row = 1  # Start row after display
+row = 1  # Start row 
 col = 0  # Start column
 
 # Create and place buttons
