@@ -30,7 +30,7 @@ def calculate():
 
 
 root = tk.Tk()
-root.title("계산기")
+root.title("calculator")
 root.configure(bg="#2D2D2D")
 
 entry = tk.Entry(root, justify="right", width=30, bg="ivory", font=('', 16, 'bold'))
