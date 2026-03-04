@@ -64,17 +64,17 @@ for i in range(7):
     new_turtle.shape("turtle")
     new_turtle.color(colors[i])
     new_turtle.goto(-350, start_ycor[i])
-    new_turtle.write(i+1) # 터틀 번호는 1부터 설정
+    new_turtle.write(i+1) 
     new_turtle.goto(-330, start_ycor[i])
     turtles.append(new_turtle)
 
 # Get user's bet
-user_choice = int(t.textinput("터틀 레이스", "몇 번에 배팅할래?(1~7)"))
+user_choice = int(t.textinput("Turtle Race", "Which turtle will you bet on? (1-7)"))
 
 t.up()
 t.goto(0, -290)
 t.color("teal")
-t.write(f"{user_choice}번 터틀에 배팅하였습니다.", align= "center", font=("Arial", 18, "bold"))
+t.write(f"You bet on turtle #{user_choice}", align= "center", font=("Arial", 18, "bold"))
 
 
 # sound race start
@@ -104,6 +104,6 @@ t.color("red")
 if user_choice == winner:
     t.write(f"You've won!!", align= "center", font=("Arial", 20, "bold"))
 else:
-    t.write("실패!! 100$를 잃었습니다.", align= "center", font=("Arial", 20, "bold"))
+    t.write("you lost!! -$100.", align= "center", font=("Arial", 20, "bold"))
 
 t.done()
