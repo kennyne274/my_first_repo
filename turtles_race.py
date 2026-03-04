@@ -88,8 +88,7 @@ while not game_over:
         i.forward(rand_speed)
         if i.xcor() > 330:
             game_over = True
-            break
-
+            
 # Find winner
 max_xcor = 0
 winner = 0
