@@ -7,7 +7,7 @@ t.bgcolor('black')
 
 hue = 0
 
-for i in range(250):
+for i in range(160):
     col=colorsys.hsv_to_rgb(hue, 1, 1)
     t.pencolor(col)
     hue+=0.005
