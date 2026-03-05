@@ -1,0 +1,58 @@
+import turtle as t
+import random
+
+def draw_branch(length, angle, level):
+    if level == 0:
+        return 
+   
+    t.pensize(level * 1.5)
+    if level > 4:
+        t.pencolor("brown")     
+    elif level > 2:
+        t.pencolor("sandybrown")
+    else:
+        t.pencolor("green") 
+    
+    t.forward(length)   
+ 
+    t.right(angle)   
+    draw_branch(length * 0.7, angle, level - 1)
+  
+    t.left(angle * 2)
+    draw_branch(length * 0.7, angle, level - 1)
+    
+    t.right(angle)
+    t.backward(length)
+
+t.bgcolor("ivory")  
+t.tracer(2)       
+t.penup()
+t.goto(0, -280)
+t.pendown()
+t.left(90)         
+
+draw_branch(140, 30, 11)   
+t.setheading(0)
+for i in range(20):
+    t.dot(120)
+    t.fd(30)
+t.setheading(180)
+for i in range(40):
+    t.dot(120)
+    t.fd(30)
+
+t.pencolor("white")
+
+t.penup()
+t.goto(-400, -280)
+t.pendown()
+
+for _ in range(300):
+    t.penup()
+    x = random.randint(-400, 400)
+    y = random.randint(-280, -220)
+    t.goto(x, y)
+    t.pendown()
+    t.dot(random.randint(4, 12))
+
+t.exitonclick()
