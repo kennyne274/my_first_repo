@@ -10,9 +10,10 @@ num_dots = 100
 
 def dots():
     for i in range(1, num_dots+1):
-        color = 255 - (i+20)
-        color2 = 255 - (i*2+5)
-        t.color(0,color,color2)
+        r = 0 + i
+        g = int(0 + i * 2.5)
+        b = 255-r
+        t.color(r,g,b)
         t.setheading(0)
         t.dot(25)
         t.fd(25)
