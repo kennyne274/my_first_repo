@@ -1,7 +1,10 @@
 # This code is good for kids. It's also beneficial for lazy teachers
 
+# This code is good for kids. It's also beneficial for lazy teachers
+
 import turtle as t
 import random
+import time
 
 text = [
         "Where there is a will, there is a way.",
@@ -22,11 +25,25 @@ def random_color():
     colors = (r,g,b)
     return colors
 
-t.shapesize(3)
-t.setheading(90)
-t.speed(2)
 t.bgcolor("black")
 t.colormode(255)
+
+tt = t.Turtle()
+tt.ht()
+tt.speed(0)
+
+for i in range(80):
+    x = random.uniform(-300, 300)
+    y = random.uniform(-300, 300)
+    size = random.uniform(2, 6)
+    tt.up()
+    tt.goto(x, y)
+    tt.dot(size, "white")
+
+
+t.shapesize(3)
+t.setheading(90)
+t.speed(1)
 t.shape("turtle")
 t.color("gold")
 t.penup()
@@ -36,17 +53,5 @@ for i in range(len(text)):
     t.write(text[i], align="center", font=("Times New Roman", 20, "bold"))
     t.color(random_color())
     t.fd(70)
-
-tt = t.Turtle()
-tt.ht()
-tt.speed(0)
-
-for i in range(50):
-    x = random.uniform(-300, 300)
-    y = random.uniform(-300, 300)
-    size = random.uniform(2, 6)
-    tt.up()
-    tt.goto(x, y)
-    tt.dot(size, "white")
 
 t.done()
