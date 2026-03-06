@@ -50,6 +50,5 @@ for i in range(len(text)):
     t.write(text[i], align="center", font=("Times New Roman", 20, "bold"))
     t.color(random_color())
     t.fd(70)
-    t.pause = 0.5
 
 t.done()
