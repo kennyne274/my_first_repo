@@ -54,17 +54,12 @@ for x in range(-380, 381, 20):
     t.forward(random.randint(20, 45))
 
 # snow
-tt = t.Turtle()
-tt.ht()
-tt.speed(0)
-
 for i in range(100):
     x = random.uniform(-300, 300)
     y = random.uniform(-300, 300)
     size = random.uniform(3, 8)
-    tt.up()
-    tt.goto(x, y)
-    tt.dot(size, "white")
-
+    t.up()
+    t.goto(x, y)
+    t.dot(size, "white")
 
 t.done()
