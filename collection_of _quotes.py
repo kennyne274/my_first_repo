@@ -1,7 +1,5 @@
 # This code is good for kids. It's also beneficial for lazy teachers
 
-# This code is good for kids. It's also beneficial for lazy teachers
-
 import turtle as t
 import random
 
