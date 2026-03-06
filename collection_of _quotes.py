@@ -1,7 +1,7 @@
 import turtle as t
 import random
 
-# This code is really a good practice piece for kids. It's also beneficial for lazy teachers
+# This code is good for kids. It's also beneficial for lazy teachers
 
 text = [
         "Where there is a will, there is a way.",
