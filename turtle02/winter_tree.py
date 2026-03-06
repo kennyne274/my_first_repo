@@ -62,4 +62,5 @@ for i in range(100):
     t.goto(x, y)
     t.dot(size, "white")
 
+t.ht()
 t.done()
