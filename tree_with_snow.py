@@ -1,6 +1,8 @@
 import turtle as t
 import random
 
+# A tree and field with snow. I like this code. 
+
 # tree
 def draw_branch(length, angle, level):
     if level == 0:
