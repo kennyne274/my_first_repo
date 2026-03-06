@@ -4,7 +4,6 @@
 
 import turtle as t
 import random
-import time
 
 text = [
         "Where there is a will, there is a way.",
