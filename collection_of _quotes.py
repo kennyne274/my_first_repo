@@ -41,16 +41,17 @@ for i in range(80):
 
 
 t.shapesize(3)
-t.setheading(90)
 t.speed(1)
 t.shape("turtle")
 t.color("gold")
 t.penup()
+t.setheading(90)
 t.goto(0, -300)
 
 for i in range(len(text)):
     t.write(text[i], align="center", font=("Times New Roman", 20, "bold"))
     t.color(random_color())
     t.fd(70)
+    t.pause = 0.5
 
 t.done()
