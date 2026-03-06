@@ -1,6 +1,7 @@
 import turtle as t
 import random
 
+# tree
 def draw_branch(length, angle, level):
     if level == 0:
         return 
@@ -32,6 +33,8 @@ t.pendown()
 t.left(90)         
 
 draw_branch(140, 30, 11)   
+
+# field
 t.setheading(0)
 for i in range(20):
     t.dot(120)
@@ -41,18 +44,15 @@ for i in range(40):
     t.dot(120)
     t.fd(30)
 
+# snow
 t.pencolor("white")
-
 t.penup()
 t.goto(-400, -280)
-t.pendown()
 
 for _ in range(300):
-    t.penup()
     x = random.randint(-400, 400)
     y = random.randint(-280, -220)
     t.goto(x, y)
-    t.pendown()
     t.dot(random.randint(4, 12))
 
 t.exitonclick()
