@@ -25,42 +25,50 @@ def draw_branch(length, angle, level):
     t.right(angle)
     t.backward(length)
 
+# grass
+def grass():
+    for x in range(-380, 381, 20):
+        t.penup()
+        t.goto(x, -230)
+        t.pendown()
+        t.setheading(random.randint(70, 110))
+        t.forward(random.randint(20, 45))
+
+# field
+def field():
+    t.penup()
+    t.setheading(0)
+    t.goto(-400, -280)
+    t.pendown()
+    t.color("sienna")
+    t.pensize(100)
+    t.forward(800)
+
+    t.color("darkgreen")
+    t.pensize(10)
+    grass()
+
+# snow
+def snow(num=100):
+    for i in range(num):
+        x = random.uniform(-380, 380)
+        y = random.uniform(-380, 380)
+        size = random.uniform(3, 8)
+        t.up()
+        t.goto(x, y)
+        t.dot(size, "white")
+
+# set up
 t.bgcolor("lightskyblue")  
 t.tracer(2)       
 t.penup()
 t.goto(0, -250)
 t.pendown()
-t.left(90)         
+t.left(90)    
+t.ht()     
 
 draw_branch(140, 30, 11)   
+field()
+snow(200)
 
-# field
-t.penup()
-t.setheading(0)
-t.goto(-400, -280)
-t.pendown()
-t.color("sienna")
-t.pensize(100)
-t.forward(800)
-
-t.color("darkgreen")
-t.pensize(10)
-
-for x in range(-380, 381, 20):
-    t.penup()
-    t.goto(x, -230)
-    t.pendown()
-    t.setheading(random.randint(70, 110))
-    t.forward(random.randint(20, 45))
-
-# snow
-for i in range(100):
-    x = random.uniform(-300, 300)
-    y = random.uniform(-300, 300)
-    size = random.uniform(3, 8)
-    t.up()
-    t.goto(x, y)
-    t.dot(size, "white")
-
-t.ht()
 t.done()
