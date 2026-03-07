@@ -27,6 +27,32 @@ def draw_branch(length, angle, level):
     t.right(angle)
     t.backward(length)
 
+
+def snow(num=300):
+    # snow
+    t.pencolor("snow")
+    t.penup()
+    t.goto(-400, -280)
+
+    for _ in range(num):
+        x = random.randint(-400, 400)
+        y = random.randint(-280, -220)
+        t.goto(x, y)
+        t.dot(random.randint(4, 12))
+
+def field(): 
+    # field
+    t.setheading(0)
+    for _ in range(20):
+        t.dot(120)
+        t.fd(30)
+    t.setheading(180)
+    for _ in range(40):
+        t.dot(120)
+        t.fd(30)
+    snow()
+
+# basic set up
 t.bgcolor("ivory")  
 t.tracer(2)       
 t.penup()
@@ -34,27 +60,8 @@ t.goto(0, -280)
 t.pendown()
 t.left(90)         
 
+# drawing a tree
 draw_branch(140, 30, 11)   
-
-# field
-t.setheading(0)
-for i in range(20):
-    t.dot(120)
-    t.fd(30)
-t.setheading(180)
-for i in range(40):
-    t.dot(120)
-    t.fd(30)
-
-# snow
-t.pencolor("white")
-t.penup()
-t.goto(-400, -280)
-
-for _ in range(300):
-    x = random.randint(-400, 400)
-    y = random.randint(-280, -220)
-    t.goto(x, y)
-    t.dot(random.randint(4, 12))
+field()
 
 t.exitonclick()
