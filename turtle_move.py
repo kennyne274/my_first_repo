@@ -38,11 +38,13 @@ def move():
     t.update()
     t.ontimer(move, 80)
 
+def main():
+    create_turtle()
+    move()
 
 t.bgcolor("black")
 t.tracer(0)
 t.colormode(255)
 
-create_turtle()
-move()
+main()
 t.done()
