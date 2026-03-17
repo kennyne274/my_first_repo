@@ -1,8 +1,6 @@
 import turtle as t
 
 # Drawing  cute Lion
-# Actually, This is my python teather's project.
-# I listened to her lecture and wrote this code.
 
 t.setup(680, 800)
 t.bgcolor("lightcyan")
