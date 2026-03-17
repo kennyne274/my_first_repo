@@ -1,6 +1,7 @@
 import tkinter as tk
 import random
 
+# you need field.png for this code
 """
 A simple program that gives you a random fortune message when you click the button.
 I tried to make the messages fun and silly. Try it when you're bored!
