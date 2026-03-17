@@ -1,6 +1,5 @@
 import turtle as t
 import random
-import math
 
 def create_turtle():
     global turtles
