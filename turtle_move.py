@@ -12,10 +12,10 @@ def create_turtle():
         tt.shapesize(1.5)
         tt.color(random_color())
         tt.penup()
-        angle = i * 10
-        tt.goto(math.cos(math.radians(angle)) * 120,
-                math.sin(math.radians(angle)) * 120)
-        tt.setheading(angle + 90)
+        x = random.randint(-40, 40)
+        y = random.randint(-40, 40)
+        tt.goto(x, y)
+        tt.setheading(random.randint(0, 361))
         turtles.append(tt)
 
 def random_color():
