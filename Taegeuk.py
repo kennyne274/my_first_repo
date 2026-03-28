@@ -1,7 +1,6 @@
 import turtle as t
 
 # draw Taegeuk
-# This symbol is used for the flag of Korea
 
 radius = 120
 
