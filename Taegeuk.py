@@ -8,7 +8,7 @@ t.title("Taegeuk")
 
 def Taegeuk(radius=80):
     t.up()
-    t.goto(radius, -33) 
+    t.goto(radius, 0) 
     t.down()
     t.seth(90)
 
