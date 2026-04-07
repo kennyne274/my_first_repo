@@ -1,6 +1,5 @@
 import turtle as t
 import time
-import random
 
 t.bgcolor("black")
 t.speed(0)
