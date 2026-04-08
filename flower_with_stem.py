@@ -34,8 +34,8 @@ def draw_leaf(x, y, angle, height=32):
         time.sleep(0.02)   
         size -= 2     
 
-def draw_petal():
-    t.color("#FE5972")
+def draw_petal(col): 
+    t.color(col)
     t.begin_fill()
     t.circle(150, 60)
     t.left(120)
@@ -48,7 +48,8 @@ def draw_flower(x, y):
     t.goto(x, y)
     t.pendown()
     for f in range(20):
-        draw_petal()
+        colors = ["#FF1493", "#FF69B4", "#F43776", "#FF4D94"]
+        draw_petal(colors[f % len(colors)])
         t.left(18)
 
     # flower center
