@@ -5,10 +5,10 @@ t.bgcolor("black")
 t.speed(0)
 t.hideturtle()
 
-def draw_stem(height=35):
+def draw_stem(x, y, height=35):
     size = height
     t.penup()
-    t.goto(0, -330)         
+    t.goto(x, y)         
     t.pendown()
     t.color("#228B22")      
     
@@ -33,19 +33,19 @@ def draw_leaf(x, y, angle, height=32):
         t.pensize(size)
         time.sleep(0.02)   
         size -= 2     
-        
+
 def draw_petal():
     t.color("#FE5972")
     t.begin_fill()
-    t.circle(160, 60)
+    t.circle(150, 60)
     t.left(120)
-    t.circle(160, 60)
+    t.circle(150, 60)
     t.left(120)
     t.end_fill()
 
-def draw_flower():
+def draw_flower(x, y):
     t.penup()
-    t.goto(0, 0)
+    t.goto(x, y)
     t.pendown()
     for f in range(20):
         draw_petal()
@@ -53,25 +53,24 @@ def draw_flower():
 
     # flower center
     t.penup()
-    t.goto(0, 0)
+    t.goto(x, y)
     t.dot(120, "yellow")
-    t.end_fill()
 
-    t.goto(0, 0)
+    t.goto(x, y)
     t.pendown()
     center()
 
 
 def center():
-    t.color("brown")
+    t.color("#B94902")
     for c in range(30):
         t.circle(30)
         t.right(12)
 
 
-draw_stem()
-draw_leaf(20, -340, 40)
-draw_leaf(-20, -340, 140)
-draw_flower()
+draw_stem(0, -330)
+draw_leaf(20, -340, 40, 32)
+draw_leaf(-20, -340, 140, 32)
+draw_flower(0, 10)
 
 t.done()
