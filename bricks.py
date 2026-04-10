@@ -38,6 +38,6 @@ for j in range(step):
     t.seth(270)
     t.fd(square_size) 
     t.seth(180)
-    t.fd(w - square_size/3.8)
+    t.fd(w - square_size/4)
 
 t.done()
