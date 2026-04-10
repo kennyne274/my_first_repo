@@ -27,9 +27,9 @@ t.pendown()
 
 step = 7
 for j in range(step):
-    for x in range(num):
+    for c in range(num):
         colors = ["#f79707",  "#f70707", "#ffffff", "#f75707", "brown", "#f76b07", "#f7b307"]
-        col = colors[x % len(colors)]
+        col = colors[c % len(colors)]
         t.seth(0)
         t.fd(square_size)    
         draw_square(square_size, col)
