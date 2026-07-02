@@ -66,7 +66,7 @@ p.hideturtle()
 p.penup()
 
 t = turtle.Turtle()
-t.speed(100)
+t.speed(0)
 t.pensize(2)
 
 t.up()
