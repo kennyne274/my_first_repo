@@ -1,6 +1,6 @@
 import tkinter as tk
 
-# wonderful calculator"
+# nice calculator"
 
 """Using eval() is not recommended for security reasons in production code,
     but this is a simple learning project calculator, so we use it for simplicity."""
