@@ -16,11 +16,12 @@ def organize_files(src):
 
     categories = {
         'images': ['.jpg', '.jpeg', '.png', '.gif', '.webp'],
-        'documents': ['.csv','.pdf', '.doc', '.docx', '.txt', '.xlsx', '.xls', '.ppt', '.pptx', '.hwpx'],
+        'documents': ['.csv','.pdf', '.doc', '.docx', '.xls','.txt', '.xlsx', '.ppt', '.pptx', '.hwpx'],
         'code' : ['.py', '.ipynb', '.c', '.html', '.css', '.js'],
         'videos': ['.mp4', '.avi', '.mkv', '.mov'],
-        'music': ['.mp3', '.wav', '.flac'],
-        'archives': ['.zip', '.rar', '.7z']
+        'Audio': ['.mp3', '.wav', '.flac', '.m4a'],
+        'archives': ['.zip', '.rar', '.7z', '.tar', '.gz'],
+        'Installers': ['.exe', '.msi', '.dmg', '.apk']
     }
 
     source = src
@@ -82,7 +83,7 @@ def organize_files(src):
                 print(f""Failed to move files {file.name}")
                 skipped_count += 1
 
-    print(f"\n총 {moved} file moves complete.")
+    print(f"\n{moved} file moves complete.")
 
 if __name__ == "__main__":
     src = get_downloads_folder()
