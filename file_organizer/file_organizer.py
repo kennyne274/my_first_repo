@@ -9,7 +9,7 @@ def get_downloads_folder():
     else:
         raise FileNotFoundError("Download folder not found.")
 
-def organize_files(): 
+def organize_files(src): 
 
     moved = 0 
     skipped_count = 0 
