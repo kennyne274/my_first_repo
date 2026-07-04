@@ -16,7 +16,7 @@ def organize_files(src):
 
     categories = {
         'images': ['.jpg', '.jpeg', '.png', '.gif', '.webp'],
-        'documents': ['.pdf', '.doc', '.docx', '.txt', '.xlsx', '.ppt', '.pptx', '.hwpx'],
+        'documents': ['.csv','.pdf', '.doc', '.docx', '.txt', '.xlsx', '.ppt', '.pptx', '.hwpx'],
         'code' : ['.py', '.ipynb', '.c', '.html', '.css', '.js'],
         'videos': ['.mp4', '.avi', '.mkv', '.mov'],
         'music': ['.mp3', '.wav', '.flac'],
